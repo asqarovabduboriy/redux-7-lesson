@@ -1,0 +1,14 @@
+.wishlist__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.empty{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #cccFFf;
+    width: 100%;
+    padding: 100px;
+}

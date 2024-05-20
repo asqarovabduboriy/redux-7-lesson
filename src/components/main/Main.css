@@ -1,0 +1,40 @@
+.text__content_main span{ 
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 22px;
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text__content_main h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 22px;
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;       
+}
+
+.text__content_main button{
+    margin-top: 25px;
+    width: 150px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+.text__content_main button:hover{
+    opacity: 0.8;
+}
+
+.wrapper_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

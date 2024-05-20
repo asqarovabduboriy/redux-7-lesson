@@ -1,0 +1,164 @@
+.img_wrapper {
+    width: 430px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding-left: 15px;
+}
+
+.img_wrapper img {
+    object-fit: contain;
+    width: 400px;
+    height: 400px;
+
+}
+
+.small_img_wrapper {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.small_img_wrapper:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    transition: 0.3s;
+    z-index: 1;
+    
+}
+
+.small_img_wrapper img {
+    border-radius: 4px;
+    object-fit: contain;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.small_img {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.big_wrapper_flex{
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.brand{
+    width: 100px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+    background-color: rgb(186, 185, 185);
+    border-radius: 6px;
+    color:white;
+    padding:5px 10px;
+    margin-bottom: 10px;
+}
+
+.brand h3{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper_info_text{
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.category{
+    width: 120px;
+    border-radius: 6px;
+    background-color: rgb(159, 194, 224); 
+    padding:5px 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.category span{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wrapper_info_text h2{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(42, 42, 42);
+    margin-bottom: 10px;
+}
+
+.wrapper_info_text p{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(100, 100, 100);
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: yellow;
+}
+
+.price{
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+
+.price h3{
+    font-size: 40px;
+    color: rgb(44, 218, 59);
+}
+
+.price h4{
+    font-size: 30px;
+    color: rgb(44, 186, 218);
+}
+
+.price__btn_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.harakteristika{
+    margin-top: 15px;
+}
+
+.harakteristika h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: sans-serif ;
+    font-weight: 700;
+    color: rgb(42, 42, 42);
+}
+
+.harakteristika p{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(100, 100, 100);
+    line-height: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+

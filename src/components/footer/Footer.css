@@ -1,0 +1,43 @@
+footer{
+    background-color:#cccfff;
+    margin-top: 40px;
+    padding: 74px 0 112px 0;
+
+}
+
+
+
+.one_text_footer p{
+    font-size: 20px;
+    width: 186px;
+    margin-left: 10px
+}
+
+.flex_big_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.two_text_footer{
+    display:grid;
+    grid-gap: 10px;
+}
+
+.three_text_footer{
+    display:grid;
+    grid-gap: 10px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.icon_footer{
+    display: grid;
+    grid-gap: 10px;
+}
