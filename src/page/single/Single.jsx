@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import "./Single.css";
 import { useParams } from "react-router-dom";
 import { useGetSingleProductQuery } from "../../context/products";
@@ -8,6 +8,13 @@ import Loading from "../../components/Loading/Loading";
 const Single = () => {
   const { id } = useParams();
   const { data, isLoading } = useGetSingleProductQuery(id);
+
+
+  const initialImage = data?.images && data.images.length > 0 ? data.images[0] : null;
+  const [mainImage, setMainImage] = useState(initialImage);
+  const handleImageClick = (selectedImage) => {
+    setMainImage(selectedImage);
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,18 +27,18 @@ const Single = () => {
       ) : data ? (
         <div className="container">
           <div className="big_wrapper_flex">
-            <div className="wrapper_imgs_big">
-              <div className="img_wrapper">
-                <img src={data?.images[0]} alt={data?.title} />
-              </div>
-              <div className="small_img">
-                {data?.images.map((el, index) => (
-                  <div className="small_img_wrapper" key={index}>
-                    <img src={el} alt="" />
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="wrapper_imgs_big">
+      <div className="img_wrapper">
+        {mainImage === null ?<img src={data?.thumbnail} alt="" /> : <img src={mainImage} alt={data?.title} /> }
+      </div>
+      <div className="small_img">
+        {data?.images.map((el, index) => (
+          <div className="small_img_wrapper" key={index} onClick={() => handleImageClick(el)}>
+            <img src={el} alt="" />
+          </div>
+        ))}
+      </div>
+    </div>
 
             <div className="wrapper_info_text">
               <div className="brand">
